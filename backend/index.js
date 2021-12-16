@@ -19,7 +19,7 @@ app.use(
 app.post('/authenticateuser', (req, res) => {
     if (req.session.useremail) {
         res.status(200).json({
-            username: req.session.username.toLowerCase()
+            username: req.session.username
         })
     } else {
         res.status(404).send("not found")
@@ -30,7 +30,7 @@ app.post('/signup', (req, res) => {
         let userdata = JSON.parse(data)
         let alreadyexists = false;
         userdata.forEach((element, index) => {
-            if (element.email === req.body.email || element.phone === req.body.phone) {
+            if (element.email === req.body.email.toLowerCase() || element.phone === req.body.phone) {
                 alreadyexists = true
             }
         });
