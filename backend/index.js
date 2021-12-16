@@ -19,7 +19,7 @@ app.use(
 app.post('/authenticateuser', (req, res) => {
     if (req.session.useremail) {
         res.status(200).json({
-            username: req.session.username
+            username: req.session.username.toLowerCase()
         })
     } else {
         res.status(404).send("not found")
