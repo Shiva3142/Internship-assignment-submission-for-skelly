@@ -1,6 +1,6 @@
 <h1>internship-assignment-submission-for-skelly</h1>
 <h4>Created by : SHIKUMAR CHAUHAN</h4>
-<p>NodeJS and ReactJS is used wor this Assignment</p>
+<p>NodeJS and ReactJS is used for this Assignment</p>
 <br><br>
 
 <h2>Folder Stucture</h2>
