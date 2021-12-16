@@ -1,0 +1,321 @@
+.paymentContainer {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 40px;
+    margin: auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.flow {
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flow div img {
+    width: 20px;
+}
+
+.flow div {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(3, 202, 136);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+hr {
+    border: 1px solid #80808033;
+    width: 100%;
+    margin: 10px;
+}
+
+.flow i {
+    background: rgb(3, 202, 136);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transform: scaleX(-1);
+}
+
+.paymentInfoContainer {
+    display: grid;
+    grid-template-columns: 5fr 2.5fr 2.9fr;
+}
+
+
+.pageNavigationOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.procedOptions button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+
+}
+
+.procedOptions button:not(:last-child) {
+    margin-right: 20px;
+    border: 1px solid;
+}
+
+.procedOptions button:last-child {
+    background: rgb(3, 202, 136);
+    color: white;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back i {
+    margin-right: 20px;
+}
+
+
+.method img {
+    max-width: 65px;
+    max-height: 35px;
+}
+
+.method input {
+    display: none;
+}
+
+.method input:checked+label {
+    border: 1px solid coral;
+}
+
+.method h4 {
+    margin: 25px 0;
+}
+
+.method {
+    margin: 0 30px;
+}
+
+.deliveryMethods {
+    margin: 50px 0;
+}
+
+.paymentOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.deliveryOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+label {
+    border: 1px solid gray;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 120px; */
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.deliveryOptions label {
+    justify-content: space-between;
+}
+
+.details {
+    width: 90%;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productsContainer {
+    margin-left: 30px;
+}
+
+.productsContainer h4 {
+    margin: 25px 0px;
+}
+
+
+.loginButton,
+.signupButton {
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 25px;
+    margin-left: 0;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.loginButton {
+    background: rgb(3, 202, 136);
+    color: white;
+}
+
+
+
+.shippingInfo input,
+select {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 15px 20px;
+    margin: 15px;
+    border-radius: 30px;
+    margin-left: 0;
+}
+
+.shippingInfo h4 {
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+.totalAmount {
+    background: rgba(128, 128, 128, 0.204);
+    width: 250px;
+    margin: 30px auto;
+    padding: 12px 35px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.totalAmount span:last-child {
+    font-weight: bolder;
+}
+
+.freeDeliveryCriteria {
+    width: 80%;
+    min-width: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.freeDeliveryCriteria i {
+    margin: 20px;
+}
+
+
+@media (min-width:868px) {
+    .productContainer {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+
+@media (max-width:1350px) {
+
+
+    .method img {
+        max-width: 30px;
+        max-height: 20px;
+    }
+
+    label {
+        height: 30px;
+        padding: 5px 15px;
+    }
+
+    .loginButton,
+    .signupButton {
+        font-size: 12px;
+        margin: 8px;
+        padding: 10px 20px;
+    }
+
+    .paymentInfoContainer {
+        display: grid;
+        grid-template-columns: 5fr 2.2fr 2.5fr;
+    }
+
+    .deliveryrate {
+        font-size: 70%;
+    }
+
+    .method {
+        margin: 0 10px;
+
+    }
+
+    .deliveryMethods {
+        margin: 20px 0;
+    }
+
+    .inputs input,
+    select {
+        padding: 5px 10px;
+    }
+
+    .totalAmount {
+        width: 180px;
+        font-size: 70%;
+    }
+
+    .freeDeliveryCriteria {
+        min-width: 150px;
+        font-size: 70%;
+    }
+}
+
+@media (max-width:900px) {}
+
+@media (max-width:868px) {
+
+    .paymentInfoContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .procedOptions button {
+        padding: 5px 10px;
+        font-size: 70%;
+    }
+
+    .procedOptions button:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .paymentContainer {
+        padding: 10px 10px;
+    }
+
+    .heading {
+        font-size: 70%;
+
+    }
+
+    .details {
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+.logincontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.288);
+    z-index: 100;
+}
+
+.logincontainer form {
+    position: relative;
+    background: linear-gradient(45deg, rgba(0, 255, 255, .8947), rgba(253, 121, 167, .9411764705882353)) no-repeat;
+    min-width: 500px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.logincontainer form input {
+    background: transparent;
+    width: 70%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.logincontainer form h2 {
+    font-weight: bolder;
+    margin: 50px 0;
+}
+
+.logincontainer input[type=submit] {
+    width: 40%;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 gray;
+    cursor: pointer;
+}
+
+.logincontainer input[type=submit]:hover {
+    background-color: aqua;
+}
+
+.logincontainer i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.logincontainer form p {
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+
+.logincontainer form p a {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+@media (max-width:1200px) {
+    .logincontainer form {
+        min-width: 400px;
+        min-height: 400px;
+    }
+
+    .logincontainer form input {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:868px) {
+    .logincontainer form {
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .logincontainer form h2 {
+        margin: 30px 0;
+    }
+
+    .logincontainer form input {
+        background: transparent;
+        width: 80%;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px 0;
+        border-bottom: 2px solid black;
+    }
+}
